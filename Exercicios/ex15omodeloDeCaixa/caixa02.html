@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags = Tags de agrupamento</title>
+    <style>
+        body{
+            background-image: linear-gradient(to bottom,
+             #3198E2,#0049e7, #6D59C0);
+            /*Lado para qual vai o degradê, cor que começa e cor que termina*/
+            background-attachment: fixed; /*Fundo Fixo*/
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin: 0px;
+        }
+        header>h1{
+            text-align: center;
+        }
+        nav{
+            background-color: rgb(68, 67, 68);
+            padding: 20px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.411);/*sombra de caixa*/
+            
+        }
+        nav> a {
+            text-decoration: none;
+            color: aliceblue;
+            margin-right: 100px;
+
+        }
+        nav >a:hover{ /*hover= parametro de interação*/
+            color: rgb(0, 24, 46);
+            text-decoration: underline; /*quando passa o mouse sublinha*/
+            
+
+        }
+        header{
+            background-color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px; /*Raio da borda (arrendondar as bordas)*/
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 10px; /*Raio da borda (arrendondar as bordas)*/
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            
+            
+        }
+        footer > p{
+            margin: 0px;
+        }
+
+    </style>
+</head>
+<body>
+    <header> <!--cabecalho-->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Principal-->
+        <section id="assuntos"> <!--seção-->
+            <article> <!--(atigo) divisão do section-->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis est iusto, error dolorem quam dolores culpa quod quaerat architecto voluptate eligendi repellat exercitationem totam aliquid repudiandae sed quia nisi commodi.</p>
+
+            </article>
+            
+        </section> 
+        <section id="noticias">
+            
+
+        </section>
+
+    </main>
+    <footer> <!--rodapé-->
+        <p>desenvolvido pelo Curso e video</p>
+    </footer>
+
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" 
+        type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" 
+        type="image/png">
+
+        <img src="imagens/foto-g.png" alt="imagen flexivel">
+    </picture>
+    
+    <h1>Reproduzindo áudio </h1> <!--apaga o "src" e add o "source:src"-->
+    
+    <audio preload="metadata" controls autoplay loop>
+        <!--"loop" para quando terminar voltar dnv, "controls"para 
+     aparecer o botão de play e "preload" é o tipo de carregamento no site-->
+         <source src="midia-audio/musica.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <h1>Video hospedado no meu proprio servidor</h1>
+     <video width="560" controls poster="imagens/capa.jpg" loop>
+        <source src="midia-video/Video-Teste2.mp4" type="video/mp4"> <!--mesmo esquema
+        das fotos para colocar em diferentes formatos para rodar em qualquer navegador-->
+     </video>
+
+     <h1>Video hospedado do youtube</h1>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/F1QRZki3zb8" 
+     title="YouTube video player" frameborder="0" 
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+     gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+     <h1>Plataforma para hospedar videos (tipo youtube), mas o 
+        video fica privado e so da pra ver no site: Vimeo
+     </h1>
+
+
+</body>
+</html>

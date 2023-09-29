@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+ 
+<style>
+    /*pseudClasses são parametros que definem estados de elementos*/
+    /* # = id
+         . = class
+         : = pseudo class
+         :: = pseudo elemento
+         > clildren (filho)*/
+        body{
+            
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        div>p{
+            display: none; /*mostrar_nenhum(o paragrafo que está em div não aparece*/
+        }
+        div:hover > p { /*o div tem um filho (o paragrafo)*/
+              display: block;
+              color: black;
+              background-color: rgb(255, 0, 0);
+              width: 200px;
+        }
+        div:hover{ /*houver=Pseudo classe de estado (quando eu passar o mouse sobre alguma div, o estado dela muda, nesse caso muda a cor)*/
+            color: rgb(255, 0, 0);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Pause o mouse sobre o texto abaixo</p>
+    <div>PASSE O MOUSE AQUI
+        <p>Texto escondido</p>
+    </div>
+    <a href="pseudoclasse.html">Ir para página 1</a>
+    
+</body>
+</html>
