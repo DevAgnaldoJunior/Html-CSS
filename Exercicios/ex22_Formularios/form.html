@@ -17,15 +17,17 @@
 </head>
 <body>
     <h1>TESTE DE FORMULÁRIO</h1>
-    <form action="cadastro.php" method="post" autocomplete="off">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <!--Para enviar os dados para alguma linguagem - Method= para os dados nao aparecer na URL - Para desligar o autoCompletar-->
+        <!--autocomplete pra ele sugerir na espaço-->
 
         <p>
             <label for="iusuario">Usuário:</label><!--label=etiqueta (relacionar a caixa com o nome)-->
-            <input type="text" name="usuário" id="iusuario" required minlength="5" maxlength="15" placeholder="Digite seu Usuário"> 
+            <input type="text" name="usuário" id="iusuario" required minlength="5" maxlength="15" placeholder="Digite seu Usuário" autocomplete="name"> 
             <!--required: Para n enviar quando o espaço estiver em branco-->
             <!--Comprimento máximo e minimo do espaço-->
             <!--placeholder= nome que aparece dentro da caixa-->
+            <!--autocomplete é o tipo de dado que ele vai sugerir-->
 
         </p>
         <p>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>FORMULÁRIO</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+    <p>
+        <label for="inome">Nome:</label>
+         <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo">
+
+    </p>
+    <p>
+        <label for="imedia">Média:</label>
+        <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="De 0 a 10"> <!--type number so aceita numero-->
+
+    </p>
+    <p>
+        <label for="imes">Período letivo:</label>
+        <input type="date" name="mes" id="imes">
+
+    </p>
+        <input type="submit" value="Concluir" autocomplete="name">
+        <input type="reset" value="Limpar">
+    </form>
+    
+</body>
+</html>
