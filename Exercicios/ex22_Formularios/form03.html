@@ -8,28 +8,45 @@
         input{
             width: 100px;
         }
+        .botao{
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
     <h1>FORMULÁRIO</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-    <p>
-        <label for="inome">Nome:</label>
-         <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo">
 
-    </p>
-    <p>
-        <label for="imedia">Média:</label>
-        <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="De 0 a 10"> <!--type number so aceita numero-->
+    <fieldset> <!--Agrupamento de todas as caixas-->
+        <legend>Dados Pessoais</legend>
+        <p>
+            <label for="inome">Nome:</label>
+             <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="De 0 a 10"> <!--type number so aceita numero-->
+        </p>
+        <p>
+            <label for="imes">Período letivo:</label>
+            <input type="date" name="mes" id="imes">
+        </p>
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" required>
+        </p>
+        <p>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel" required
+            pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$">
+        
+             <!--Estudar mais sobre RegEx=expressões regulares (Filtros para as caixas)-->
+        </p>
+    </fieldset>
 
-    </p>
-    <p>
-        <label for="imes">Período letivo:</label>
-        <input type="date" name="mes" id="imes">
+        <input class="botao"  type="submit" value="Concluir" autocomplete="name">
 
-    </p>
-        <input type="submit" value="Concluir" autocomplete="name">
-        <input type="reset" value="Limpar">
+        <input class="botao" type="reset" value="Limpar">
     </form>
     
 </body>
