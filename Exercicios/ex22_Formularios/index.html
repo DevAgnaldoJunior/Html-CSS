@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="off"> <!--Para enviar os dados para alguma linguagem - Method= para os dados nao aparecer na URL - Para desligar o autoCompletar-->
+
+        <p><label for="inome">Nome: </label> <!--label=etiqueta (relacionar a caixa com o nome)-->
+            <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <a href="form.html">Ir para a outra pagina mais completa</a>
+    
+</body>
+</html>

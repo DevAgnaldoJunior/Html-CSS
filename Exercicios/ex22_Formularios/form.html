@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            
+            color: rgb(8, 0, 83);
+            width: 110px;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h1>TESTE DE FORMULÁRIO</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!--Para enviar os dados para alguma linguagem - Method= para os dados nao aparecer na URL - Para desligar o autoCompletar-->
+
+        <p>
+            <label for="iusuario">Usuário:</label><!--label=etiqueta (relacionar a caixa com o nome)-->
+            <input type="text" name="usuário" id="iusuario" required minlength="5" maxlength="15" placeholder="Digite seu Usuário"> 
+            <!--required: Para n enviar quando o espaço estiver em branco-->
+            <!--Comprimento máximo e minimo do espaço-->
+            <!--placeholder= nome que aparece dentro da caixa-->
+
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required min="8" maxlength="20" placeholder="Digite sua senha"> 
+            <!--type password aparece tampado -->
+            <!--required: Para n enviar quando o espaço estiver em branco-->
+            <!--Comprimento máximo e minimo do espaço-->
+            <!--placeholder= nome que aparece dentro da caixa-->
+        </p>
+         <input type="submit" value="ENVIAR">
+         <input type="reset" value="LIMPAR">
+
+    </form>
+    <a href="index.html">Ir para a outra pagina</a>
+</body>
+</html>
