@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>>Exemplo de Fomulário</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend></legend>
+
+            <label for="iestado">Estado:</label>
+            <select name="estado" id="iestado"> <!--select: abre barrinha para baixo-->
+                <option value="" selected>---Escolha---</option> <!--selected para a cixa já iniciar com esse nome-->
+                <optgroup label="Região Sudeste"> <!-- optgroup + label: Titulo para cada option-->
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">  <!--optgroup + label: Titulo para cada option-->
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="iprofissao">Profissão:</label>
+                <input type="text" name="profissao" id="iprofissao" list="listaProfissao"> <!--List:mesmo nome do id do datalist-->
+
+                <datalist id="listaProfissao"> <!--para criar opções de escolha na caixa imput-->
+                    <option value="DEV">Desenvolvedor</option>
+                    <option value="VEN">Vendedor</option>
+                    <option value="MED">Médico</option>
+                    <option value="DENT">Dentista</option>
+
+                </datalist>
+
+            </p>
+
+
+
+
+
+
+        </fieldset>
+
+        <input type="submit" value="Concluir">
+        <input type="reset" value="Apagar">
+
+
+    </form>
+
+</body>
+</html>
